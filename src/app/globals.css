@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -40,7 +40,7 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -104,4 +104,44 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+:root{
+  --back-color:rgb(226, 228, 244);
+  --shadow-color:rgba(85, 123, 129, 0.581);
+  --first-color:rgba(66,180,214,255);
+  --font-color-light:#0c0c0cbe;
+  --font-color-dark:#1f1d1dd8;
+  --fill-color:rgba(246, 220, 244, 0.01);
+  --input-backcolor-dark:#cbd6d8a8;
+  --input-backcolor-light:#1a1919ef;
+  --svg-color:rgba(1, 67, 103, 0.947);
+  --logo-color:rgb(34, 35, 36);
+}
+body{
+  background-color:var(--back-color) ;
+}
+[data-theme='dark']{
+  --back-color:rgb(16, 16, 16);
+  --shadow-color: rgba(58, 89, 94, 0.656);
+  --first-color:rgba(66,180,214,255);
+  --font-color-light:#b7cccf;
+  --font-color-dark:#7e8d90;
+  --fill-color:rgba(246, 220, 244, 0.01);
+  --input-backcolor-dark:#394c4da8;
+  --input-backcolor-light:#b1c6cca8;
+  --svg-color:rgba(1, 67, 103, 0.947);
+  --logo-color:rgb(110, 108, 108);
 }
