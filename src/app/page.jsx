@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./component/navbar";
 import Feeds from "./component/home";
 import Footer from "./component/footer";
+// import
 
 async function getData() {
   const res = await fetch(
@@ -19,6 +20,8 @@ export default async function Home() {
   const data = await getData();
   return (
     <main>
+      
+      <div className="postcontainer">
       <Navbar />
       <div className="posts">
         {data.map((item) => {
@@ -38,6 +41,7 @@ export default async function Home() {
             />
           );
         })}
+      </div>
       </div>
     </main>
   );

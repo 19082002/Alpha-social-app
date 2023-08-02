@@ -1,6 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .navbar {
     position: fixed;
-    display: flex;
+    /* display: flex; */
     z-index: 1000;
     align-items: center;
     justify-content: center;

@@ -21,7 +21,7 @@ export default function Feeds(props) {
   console.log(props.likedbyuser)
   return (
     <main>
-      <div className="postcontainer">
+     
         <div className=" main">
           <div className="card">
             <div className="top">
@@ -88,7 +88,7 @@ export default function Feeds(props) {
             </div>
           </div>
         </div>
-      </div>
+      
     </main>
   );
 }

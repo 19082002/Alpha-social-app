@@ -145,3 +145,27 @@ body{
   --svg-color:rgba(1, 67, 103, 0.947);
   --logo-color:rgb(110, 108, 108);
 }
+.posts{
+  display: grid;
+  gap:1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* margin: 20px; */
+  /* margin-top: 60px;; */
+/* height:400px; */
+
+}
+.poscontainer{
+/* margin: 20px; */
+}
+@media screen and (max-width: 500px){
+  .posts{
+    gap:0.1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 215px){
+  .posts{
+    gap:0.1rem;
+    grid-template-columns: 1fr;
+  }
+}
